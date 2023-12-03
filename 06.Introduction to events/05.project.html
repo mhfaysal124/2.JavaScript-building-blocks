@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Introduction to events || MH Faysal</title>
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+   <link rel="stylesheet" href="../style.css">
+   
+</head>
+<body>
+
+   <!-- JavaScript and HTML content goes start -->
+   <div class="container">
+      
+
+
+      <body class="innerBody">
+         <div id="container">
+            <button class="innerBtn">Click me!</button>
+         </div>
+         <pre id="output"></pre>
+      </body>
+
+      <script>
+         const output = document.querySelector('#output');
+
+         function handleClick(e) {
+            output.textContent += `You clicked on a ${e.currentTarget.tagName} element.\n`;
+         }
+
+         const innerBody = document.querySelector('.innerBody');
+         const container = document.querySelector('#container');
+         const innerBtn = document.querySelector('.innerBtn');
+         
+         innerBody.addEventListener('click', handleClick, {capture: true});
+         container.addEventListener('click', handleClick, {capture:true});
+         innerBtn.addEventListener('click', handleClick);
+         
+      </script>
+
+
+
+   </div>
+   <!-- JavaScript and HTML content goes end -->
+   
+
+   
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+   <!-- Notes start  -->
+   <div>      
+      <button class="accordion"><i style="color: orangered;">
+            
+            project 05
+         </i></button>
+      <div class="panel">
+         <p class="all-content">
+            <a target="_blank" href="https://developer.mozilla.org/en-US/docs/Learn/JavaScript/Building_blocks/Events">
+               <b>Dcos Link: </b>
+
+               Introduction to events
+
+
+            </a><br> 
+
+
+
+            <ol class="ol-notes">
+               
+            </ol>
+            
+
+            
+
+         </p>
+      </div>
+      <div class="previous-next">
+         <button class="previous-button">
+            <a href="../06.Introduction to events/04.project.html">
+               <i class="fa fa-angle-left" aria-hidden="true"></i>
+                Prev
+            </a>
+         </button>
+
+         <button class="previous-button">
+            <a href="../index.html">
+               Home
+            </a>
+         </button>
+
+         <button class="next-button">
+            <a href="../06.Introduction to events/06.project.html">
+               Next
+               <i class="fa fa-angle-right" aria-hidden="true"></i>
+            </a>
+         </button>
+      </div>
+
+      
+      <!-- script language -->
+      <script src="../script.js"></script>
+   </div>
+   <!-- Notes end -->
+
+</body>
+</html>

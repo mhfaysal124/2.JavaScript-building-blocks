@@ -1,0 +1,100 @@
+*{
+   font-size: 20px;
+   font-family: Arial, Helvetica, sans-serif;
+   /* background-color: #000; */
+}
+a{
+   text-decoration: none;
+}
+/* JavaScript css start*/
+
+.container{
+   font-family: Arial, Helvetica, sans-serif;
+   min-height: 400px;
+   padding: 20px;
+   /* border: 5px solid #810202; */
+   /* background-color: #131417; */
+   /* color: rgb(9, 185, 185); */
+}
+
+
+/* JavaScript css end*/
+/* Style the buttons that are used to open and close the accordion panel */
+.accordion {
+   background-color: #000000;
+   border: 5px solid red;
+   color: #fff;
+   cursor: pointer;
+   padding: 18px;
+   width: 100%;
+   text-align: left;
+   border: none;
+   outline: none;
+   /* transition: 0.4s; */
+}
+.accordion i{
+   padding: 7px 10px;
+}
+
+
+   /* Style the accordion panel. Note: hidden by default */
+   .panel {
+      padding: 0 18px;
+      background-color: #000000;
+      display: none;
+      overflow: hidden;
+      border: 5px solid rgb(0, 0, 0); 
+      color: white;
+      border-top: 5px solid white;
+   }
+   
+
+
+.ol-notes{
+   padding: 20px 50px;
+   border: 2px solid;
+   margin: 30px;
+}
+.ol-notes li{
+   color: orangered;
+   /* font-weight: bold; */
+   font-size: 29px;
+   font-family: Arial, Helvetica, sans-serif;
+}
+.previous-next{
+   padding: 10px 40px;
+   display: flex;
+   gap: 10px;
+   align-content: center;
+   background-color: #000000;
+   border-top: 5px solid white;
+}
+.previous-next a{
+   color: white;
+}
+.next-button, 
+.previous-button{
+   /* display: flex; */
+   /* width: 80px; */
+   border-radius: 5px;
+   background-color: black;
+   border: none;
+   margin: 0 auto;
+   padding: 10px;
+   color: white;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

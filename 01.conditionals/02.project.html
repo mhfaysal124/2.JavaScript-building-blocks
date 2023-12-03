@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Conditionals</title>
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+   <link rel="stylesheet" href="../style.css">
+   
+   <style>
+      .js-txt{
+         width: 400px;
+      }
+   </style>
+
+</head>
+<body>
+   <!-- JavaScript and HTML content goes start -->
+   <div class="container">
+
+
+      
+
+
+
+      <label for="Weather">Select the type today: </label>
+      <select name="weather" id="weather">
+         <option value="">--Make a Choice---</option>
+         <option value="sunny">Sunny</option>
+         <option value="rainy">Rainy</option>
+         <option value="snowing">Snowing</option>
+         <option value="overcast">Overcast</option>
+      </select><br><br>
+      <p class="js-txt"></p>
+
+      <script>
+         const selectWeather = document.querySelector('select');
+         const paraTxt = document.querySelector('.js-txt');
+         selectWeather.addEventListener('change', setWeather);
+
+         function setWeather(){
+            const choice = selectWeather.value;
+            if(choice === "sunny"){
+               paraTxt.innerHTML = "It is nice and sunny outside today. Wear shorts! Go to the beach, or the park, and get an ice cream.";
+            } else if(choice === "rainy"){
+               paraTxt.innerHTML = "Rain is falling outside; take a rain coat and an umbrella, and don't stay out for too long";
+            } else if(choice === "snowing") {
+               paraTxt.innerHTML = "The snow is coming down — it is freezing! Best to stay in with a cup of hot chocolate, or go build a snowman.";
+            } else if(choice === "overcast") {
+               paraTxt.innerHTML = "It isn't raining, but the sky is grey and gloomy; it could turn any minute, so take a rain coat just in case.";
+            } else{
+               paraTxt.innerHTML = "";
+            }
+         }
+      </script>
+      
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+   </div>
+   <!-- JavaScript and HTML content goes end -->
+   
+
+   
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+   <!-- Notes start  -->
+   <div>      
+      <button class="accordion"><i style="color: orangered;">
+            
+            project -02
+
+         </i></button>
+      <div class="panel">
+         <p class="all-content">
+            <a target="_blank" href="https://developer.mozilla.org/en-US/docs/Learn/JavaScript/Building_blocks/conditionals">
+               <b>Dcos Link: </b>
+
+                Making decisions in your code — conditionals
+
+            </a><br> 
+
+
+
+            <ol class="ol-notes">
+               
+            </ol>
+            
+
+            
+
+         </p>
+      </div>
+      <div class="previous-next">
+         <button class="previous-button">
+            <a href="../1.conditionals/01.project.html">
+               <i class="fa fa-angle-left" aria-hidden="true"></i>
+                Prev
+            </a>
+         </button>
+
+         <button class="previous-button">
+            <a href="../index.html">
+               Home
+            </a>
+         </button>
+
+         <button class="next-button">
+            <a href="../1.conditionals/03.project.html">
+               Next
+               <i class="fa fa-angle-right" aria-hidden="true"></i>
+            </a>
+         </button>
+      </div>
+
+      
+      <!-- script language -->
+      <script src="../script.js"></script>
+   </div>
+   <!-- Notes end -->
+
+</body>
+</html>

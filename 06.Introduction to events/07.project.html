@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Introduction to events || MH Faysal</title>
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+   <link rel="stylesheet" href="../style.css">
+   
+   
+   <style>
+      .tile{
+         height: 100px;
+         width: 25%;
+         float: left;
+      }
+   </style>
+</head>
+<body>
+
+   <!-- JavaScript and HTML content goes start -->
+   <div class="container">
+      
+
+
+      <div id="container">
+         <div class="tile"></div>
+         <div class="tile"></div>
+         <div class="tile"></div>
+         <div class="tile"></div>
+         <div class="tile"></div>
+         <div class="tile"></div>
+         <div class="tile"></div>
+         <div class="tile"></div>
+         <div class="tile"></div>
+         <div class="tile"></div>
+         <div class="tile"></div>
+         <div class="tile"></div>
+         <div class="tile"></div>
+         <div class="tile"></div>
+         <div class="tile"></div>
+         <div class="tile"></div>
+      </div>
+
+      <script>
+         const container = document.querySelector('#container');
+
+         function random(color){
+            return Math.floor(Math.random() * (color +1));
+         }
+
+         function bgColorChange(event) {
+            const bgColor = `rgb(${random(255)}, ${random(255)}, ${random(255)})`;
+            event.target.style.backgroundColor = bgColor;
+         }
+
+         container.addEventListener('click', bgColorChange)
+
+
+      </script>
+
+
+
+
+
+
+
+   </div>
+   <!-- JavaScript and HTML content goes end -->
+   
+
+   
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+   <!-- Notes start  -->
+   <div>      
+      <button class="accordion"><i style="color: orangered;">
+            
+            project 07
+         </i></button>
+      <div class="panel">
+         <p class="all-content">
+            <a target="_blank" href="https://developer.mozilla.org/en-US/docs/Learn/JavaScript/Building_blocks/Events">
+               <b>Dcos Link: </b>
+
+               Introduction to events
+
+
+            </a><br> 
+
+
+
+            <ol class="ol-notes">
+               
+            </ol>
+            
+
+            
+
+         </p>
+      </div>
+      <div class="previous-next">
+         <button class="previous-button">
+            <a href="../06.Introduction to events/06.project.html">
+               <i class="fa fa-angle-left" aria-hidden="true"></i>
+                Prev
+            </a>
+         </button>
+
+         <button class="previous-button">
+            <a href="../index.html">
+               Home
+            </a>
+         </button>
+
+         <button class="next-button">
+            <a href="../06.Introduction to events/function_return_calues.html">
+               Next
+               <i class="fa fa-angle-right" aria-hidden="true"></i>
+            </a>
+         </button>
+      </div>
+
+      
+      <!-- script language -->
+      <script src="../script.js"></script>
+   </div>
+   <!-- Notes end -->
+
+</body>
+</html>

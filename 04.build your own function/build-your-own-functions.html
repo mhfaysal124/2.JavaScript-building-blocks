@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Build your own function || MH Faysal</title>
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+   <link rel="stylesheet" href="../style.css">
+   
+   
+   <style>
+      .msgBox {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+        width: 400px;
+        background: #353535;
+      }
+
+      .msgBox p {
+        line-height: 1.5;
+        padding: 10px 20px;
+        color: #9b9a9a;
+        padding-left: 82px;
+        background-position: 25px center;
+        background-repeat: no-repeat;
+      }
+
+      .msgBox button {
+        background: none;
+        border: none;
+        position: absolute;
+        top: 0;
+        right: 0;
+        font-size: 1.1rem;
+        color: #aaa;
+      }
+
+    </style>
+
+</head>
+<body>
+   <!-- JavaScript and HTML content goes start -->
+   <div class="container">
+      
+
+
+
+
+      <button>Display message box</button>
+
+      <script>
+         function displayMessage(msgText, msgType){
+            
+            const body = document.body;
+
+            const panel = document.createElement('div');
+            panel.setAttribute('class', 'msgBox');
+            body.appendChild(panel);
+
+            const msg = document.createElement('p');
+            msg.textContent = msgText;
+            panel.appendChild(msg);
+
+            const closeBtn = document.createElement('button');
+            closeBtn.textContent = 'x';
+            panel.appendChild(closeBtn);
+
+            closeBtn.addEventListener('click', () => {
+               panel.parentNode.removeChild(panel);
+            })
+
+
+            if( msgType === 'warning'){
+               msg.style.backgroundImage = 'url(icon/warning.png)';
+               panel.style.backgroundColor = 'red';
+            } else if( msgType === 'chat') {
+               msg.style.backgroundImage = 'url(icon/chat.png)';
+               panel.style.backgroundColor = 'aqua';
+            } else{
+               msg.style.paddingLeft = '20px';
+            }
+
+
+
+         };
+         const btn =document.querySelector('button');
+         btn.addEventListener('click', () => {
+            displayMessage('Your inbox is almost full - delete some mails', 'warning');
+            displayMessage('Brain: Hi there, how are you today?', 'chat');
+         });
+      </script>
+
+
+      
+
+
+
+
+
+
+
+
+
+   </div>
+   <!-- JavaScript and HTML content goes end -->
+   
+
+   
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+   <!-- Notes start  -->
+   <div>      
+      <button class="accordion"><i style="color: orangered;">
+            
+            All practices are goes here................
+         </i></button>
+      <div class="panel">
+         <p class="all-content">
+            <a target="_blank" href="https://developer.mozilla.org/en-US/docs/Learn/JavaScript/Building_blocks/Build_your_own_function">
+               <b>Dcos Link: </b>
+
+               Build your own function
+
+
+            </a><br> 
+
+
+
+            <ol class="ol-notes">
+               <li>alert();</li>
+               <li>const panel = document.createElement("html element")</li>
+               <li>panel.appendChild("first class/id", "name of id/class")</li>
+               <li>panel.parentNode.removeChild(panel).</li>
+               <li>.addEventListener('click', () => { })</li>
+            </ol>
+            
+
+            
+
+         </p>
+      </div>
+      <div class="previous-next">
+         <button class="previous-button">
+            <a href="../index.html">
+               <i class="fa fa-angle-left" aria-hidden="true"></i>
+                Prev
+            </a>
+         </button>
+
+         <button class="previous-button">
+            <a href="../index.html">
+               Home
+            </a>
+         </button>
+
+         <button class="next-button">
+            <a href="#">
+               end
+               <i class="fa fa-angle-right" aria-hidden="true"></i>
+            </a>
+         </button>
+      </div>
+
+      
+      <!-- script language -->
+      <script src="../script.js"></script>
+   </div>
+   <!-- Notes end -->
+
+</body>
+</html>

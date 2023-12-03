@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>conditionals</title>
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+   <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+   <!-- JavaScript and HTML content goes start -->
+   <div class="container">
+
+
+      <label for="js-shopping-check">Has the shopping been done?</label>
+      <input type="checkbox" name="shope" class="js-check-box">
+
+      <p class="js-earn"></p>
+
+
+      <script>
+         
+         const checkbox = document.querySelector('.js-check-box');
+         const paraTxt = document.querySelector('.js-earn');
+         let shoppingDone = false;
+
+         checkbox.addEventListener('click', () => {
+            checkbox.disabled = true;
+            shoppingDone = true;
+            updateAllows();
+         });
+
+         function updateAllows(){
+            let childAllows;
+            if(shoppingDone === true){
+               childAllows =10;
+            } else{
+               childAllows = 5;
+            }
+            paraTxt.textContent = `Child has earned $${childAllows} this week.`;
+         };
+         updateAllows();
+         
+      </script>
+
+
+
+
+
+
+
+
+
+
+
+   </div>
+   <!-- JavaScript and HTML content goes end -->
+   
+
+   
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+   <!-- Notes start  -->
+   <div>      
+      <button class="accordion"><i style="color: orangered;">
+            
+            project -01
+
+         </i></button>
+      <div class="panel">
+         <p class="all-content">
+            <a target="_blank" href="https://developer.mozilla.org/en-US/docs/Learn/JavaScript/Building_blocks/conditionals">
+               <b>Dcos Link: </b>
+
+                Making decisions in your code — conditionals
+
+            </a><br> 
+
+
+
+            <ol class="ol-notes">
+               
+            </ol>
+            
+
+            
+
+         </p>
+      </div>
+      <div class="previous-next">
+         <button class="previous-button">
+            <a href="../index.html">
+               <i class="fa fa-angle-left" aria-hidden="true"></i>
+                Prev
+            </a>
+         </button>
+
+         <button class="previous-button">
+            <a href="../index.html">
+               Home
+            </a>
+         </button>
+
+         <button class="next-button">
+            <a href="../1.conditionals/02.project.html">
+               Next
+               <i class="fa fa-angle-right" aria-hidden="true"></i>
+            </a>
+         </button>
+      </div>
+
+      
+      <!-- script language -->
+      <script src="../script.js"></script>
+   </div>
+   <!-- Notes end -->
+
+</body>
+</html>

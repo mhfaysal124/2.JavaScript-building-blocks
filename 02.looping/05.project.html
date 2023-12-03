@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Looping code - Calculating squares</title>
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+   <link rel="stylesheet" href="../style.css">
+  
+</head>
+<body>
+   <!-- JavaScript and HTML content goes start -->
+   <div class="container">
+
+
+
+      
+      <label for="">Enter number:</label>
+      <input type="number" id="integer">
+      <button class="js-btn">Generate integer squares</button>
+      <p class="js-para">Output: </p>
+
+      <script>
+
+         const input = document.querySelector('input');
+         const btn = document.querySelector('.js-btn');
+         const para = document.querySelector('.js-para');
+
+         btn.addEventListener('click', () => {
+            para.textContent = 'Output: ';
+            const num = input.value;
+            input.value = '';
+            input.focus();
+            for( let i = 1; i < num; i++) {
+               let sqRoot = Math.sqrt(i);
+               if(Math.floor(sqRoot) !== sqRoot) {
+                  continue;
+               }
+               para.textContent += `${i} `;               
+            }
+         })
+
+
+
+
+      </script>
+
+
+
+
+
+
+
+
+
+
+   </div>
+   <!-- JavaScript and HTML content goes end -->
+   
+
+   
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+   <!-- Notes start  -->
+   <div>      
+      <button class="accordion"><i style="color: orangered;">
+            
+            project -05 ===>
+
+         </i></button>
+      <div class="panel">
+         <p class="all-content">
+            <a target="_blank" href="https://developer.mozilla.org/en-US/docs/Learn/JavaScript/Building_blocks/Looping_code">
+               <b>Dcos Link: </b>
+
+               Looping code
+
+
+            </a><br> 
+
+
+
+            <ol class="ol-notes">
+               
+            </ol>
+            
+
+            
+
+         </p>
+      </div>
+      <div class="previous-next">
+         <button class="previous-button">
+            <a href="../2.looping/04.project.html">
+               <i class="fa fa-angle-left" aria-hidden="true"></i>
+                Prev
+            </a>
+         </button>
+
+         <button class="previous-button">
+            <a href="../index.html">
+               Home
+            </a>
+         </button>
+
+         <button class="next-button">
+            <a href="../2.looping/looping-code.html">
+               Next
+               <i class="fa fa-angle-right" aria-hidden="true"></i>
+            </a>
+         </button>
+      </div>
+
+      
+      <!-- script language -->
+      <script src="../script.js"></script>
+   </div>
+   <!-- Notes end -->
+
+</body>
+</html>

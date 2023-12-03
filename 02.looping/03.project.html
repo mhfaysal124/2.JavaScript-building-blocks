@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Looping code - Calculating squares</title>
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+   <link rel="stylesheet" href="../style.css">
+
+</head>
+<body>
+   <!-- JavaScript and HTML content goes start -->
+   <div class="container">
+
+
+
+
+      <label for="name">Search by contact name:</label>
+      <input type="text" name="name" id="name">
+      <button class="js-searchBtn">Search</button>
+      <pre class="js-para"></pre>
+      
+      <script>
+         const contacts = [
+            "Chris:2232322",
+            "Sarah:3453456",
+            "Bill:7654322",
+            "Mary:9998769",
+            "Dianne:9384975",
+         ];
+
+         const input = document.querySelector('input');
+         const searchBtn = document.querySelector('.js-searchBtn');
+         const para = document.querySelector('.js-para');
+
+         searchBtn.addEventListener('click', () => {
+            const searchName = input.value.toLowerCase();
+            input.value = '';
+            input.focus();
+            para.textContent = '';
+            for(const contact of contacts){
+               const splitContact = contact.split(':');
+               if(splitContact[0].toLowerCase() === searchName) {
+                  para.textContent = `${splitContact[0]}'s number is ${splitContact[1]}.`;
+                  continue;
+               }
+            }
+            if(para.textContent === '') {
+               para.textContent = 'Contact not found';
+            }
+         })
+
+      </script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+   </div>
+   <!-- JavaScript and HTML content goes end -->
+   
+
+   
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+   <!-- Notes start  -->
+   <div>      
+      <button class="accordion"><i style="color: orangered;">
+            
+            project -03 ===>
+
+         </i></button>
+      <div class="panel">
+         <p class="all-content">
+            <a target="_blank" href="https://developer.mozilla.org/en-US/docs/Learn/JavaScript/Building_blocks/Looping_code">
+               <b>Dcos Link: </b>
+
+               Looping code
+
+
+            </a><br> 
+
+
+
+            <ol class="ol-notes">
+               
+            </ol>
+            
+
+            
+
+         </p>
+      </div>
+      <div class="previous-next">
+         <button class="previous-button">
+            <a href="../2.looping/02.project.html">
+               <i class="fa fa-angle-left" aria-hidden="true"></i>
+                Prev
+            </a>
+         </button>
+
+         <button class="previous-button">
+            <a href="../index.html">
+               Home
+            </a>
+         </button>
+
+         <button class="next-button">
+            <a href="../2.looping/04.project.html">
+               Next
+               <i class="fa fa-angle-right" aria-hidden="true"></i>
+            </a>
+         </button>
+      </div>
+
+      
+      <!-- script language -->
+      <script src="../script.js"></script>
+   </div>
+   <!-- Notes end -->
+
+</body>
+</html>

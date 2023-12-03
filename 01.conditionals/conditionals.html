@@ -1,0 +1,440 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Practices</title>
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+   <link rel="stylesheet" href="../style.css">
+   
+</head>
+<body>
+   <!-- JavaScript and HTML content goes start -->
+   <div class="container">
+
+
+      
+      
+
+
+
+
+      <!-- <input class="js-input" type="number" name="age" id="age" placeholder="Place your age">
+      <button class="js-btn">Click</button>
+      <p class="js-txt"></p> -->
+
+      <script>
+         // let cheese = "cheddar";
+         // if(cheese === "cheddar"){
+         //    console.log('yay! Cheese available for making cheese on test');
+         // } else {
+         //    console.log('No cheese on toast for you today.')
+         // }
+
+
+         // let shoppingDone= false;
+         // let childsAllow;
+         //  if(shoppingDone){
+         //    childsAllow = 5;
+         //  } else{
+         //    childsAllow = 10;
+         //  }
+         //  console.log(childsAllow)
+
+         
+         // const isBirthday = 25;
+         // const greeting = isBirthday
+         //    ? 'Happy birthday MH Fayal'
+         //    : 'Good Morning';
+
+         //    console.log(greeting);
+
+
+         // const inputElem = document.querySelector('.js-input');
+         // const btn = document.querySelector('.js-btn');
+         // const txt = document.querySelector('.js-txt');
+
+         // btn.addEventListener('click', () => {
+         //    const allowed = inputElem.value >=18
+         //       ? 'Yes! Your are allowed'
+         //       : 'No! You are not allowed';
+               
+         //       txt.textContent = allowed;
+         // })
+
+      </script>
+
+
+<!-- project 01 -->
+   <!-- <div>
+      <label for="shopping">Has the shopping been done?</label>
+      <input type="checkbox" name="checkbox" id="checkbox">
+
+      <p></p>
+      <script>
+         const inputElem = document.querySelector('input');
+         const para = document.querySelector('p');
+         let shoppingDones = false;
+
+         inputElem.addEventListener('click', () => {
+            // inputElem.disabled = true;
+            shoppingDones = true;
+            updateShopping();
+         })
+
+         function updateShopping(){
+            let childsAllow;
+            if(shoppingDones === true){
+               childsAllow= 10;
+            } else{
+               childsAllow = 5;
+            }
+            para.textContent = `Child has earned $${childsAllow} this week`;
+         }
+         updateShopping();
+
+      </script>
+   </div> -->
+
+
+
+
+<!-- project 02 -->
+   <!-- <div>
+
+      <label for="tempareture">Select the type today: </label>
+      <select name="tempareture" id="tempareture">
+         <option value="">--Make a Choice--</option>
+         <option value="sunny">Sunny</option>
+         <option value="rainy">Rainy </option>
+         <option value="snowing">Snowing</option>
+         <option value="overcast">Overcast</option>
+      </select>
+      <p style="width: 400px;"></p>
+
+      <script>
+         const select = document.querySelector('select');
+         const para = document.querySelector('p');
+
+         select.addEventListener('change', () => {
+            let choice = select.value;
+
+            if(choice === "sunny") {
+               para.textContent = `It is nice and sunny outside today. Wear shorts! Go to the beach, or the park, and get an ice cream`;
+            } else if(choice === 'rainy'){
+               para.textContent = `Rain is falling outside; take a rain coat and an umbrella, and don't stay out for too long`;
+            } else if(choice === 'snowing') {
+               para.textContent = `The snow is coming down — it is freezing! Best to stay in with a cup of hot chocolate, or go build a snowman.`;
+            } else if(choice === 'overcast') {
+               para.textContent = `It isn't raining, but the sky is grey and gloomy; it could turn any minute, so take a rain coat just in case.`;
+            } else{
+               para.textContent = '';
+            }
+         })
+
+
+      </script>
+
+
+   </div> -->
+
+
+
+
+
+<!-- project 03 -->
+   <!-- <div>
+
+      <label for="themparature">Select the type today:</label>
+      <select name="tempareture" id="themparature">
+         <option value="">--Make a Choice--</option>
+         <option value="Sunny">Sunny</option>
+         <option value="Rainy">Rainy</option>
+         <option value="Snowing">Snowing</option>
+         <option value="Overcast">Overcast</option>
+      </select>
+      <p style="width: 400px;"></p>
+
+      <script>
+         const select = document.querySelector('select');
+         const para = document.querySelector('p');
+
+         select.addEventListener('change', () => {
+            let choice = select.value;
+
+            switch (choice) {
+               case 'Sunny':
+                  para.textContent = `It is nice and sunny outside today. Wear shorts! Go to the beach, or the park, and get an ice cream.`;
+                  break;
+               
+               case 'Rainy':
+                  para.textContent = `It is nice and sunny outside today. Wear shorts! Go to the beach, or the park, and get an ice cream.`;
+                  break;
+
+               case 'Snowing':
+                  para.textContent = `Rain is falling outside; take a rain coat and an umbrella, and don't stay out for too long`;
+                  break;
+
+               case 'Overcast':
+                  para.textContent = `It isn't raining, but the sky is grey and gloomy; it could turn any minute, so take a rain coat just in case.`;
+                  break;
+
+               default:
+                  para.textContent = ``;
+                  break;
+            }
+         })
+      </script>
+   </div> -->
+
+
+
+
+
+<!-- project 04 -->
+   <!-- <div>
+
+      <label for="theme">Select theme: </label>
+      <select name="theme" id="theme">
+         <option value="white">white</option>
+         <option value="black">black</option>
+      </select>
+      <h1>This is my Website.</h1>
+      <script>
+         const select =document.getElementById('theme');
+         const html = document.querySelector('html');
+   
+         function updateTheme(bgColor, textColor) {
+            html.style.backgroundColor = bgColor;
+            html.style.color = textColor;
+         };
+         select.addEventListener('change', () => {
+            select.value === 'white'
+               ? updateTheme('white', 'black')
+               : updateTheme('black', 'white')
+         })
+   
+      </script>
+
+   </div> -->
+
+   
+
+
+<!-- projcet 05 -->
+   <!-- <div>
+      <label for="name">Your name: </label>
+      <input type="text" name="name" id="name"><br><br>
+
+      <label for="age">Your age:</label>
+      <input type="number" name="age" id="age"><br><br>
+
+      <button>Submit</button>
+      <p class="txt1"></p>
+      <p class="txt2"></p>
+
+      <script>
+         document.body.style.padding = '50px';
+
+         const name = document.getElementById('name');
+         const age = document.getElementById('age');
+
+         const btn = document.querySelector('button');
+         const txt1 = document.querySelector('.txt1');
+         const txt2 = document.querySelector('.txt2');
+
+         btn.addEventListener('click', () => {
+            const greeting = name.value;
+            const allowness = age.value >= 18
+               ? `${greeting}, Your are Alloweded!`
+               : `No ${greeting}, You are "Not" allowed on this website`;
+
+            txt1.textContent = `Welcome, ${greeting}`;
+            txt2.textContent = `${allowness}`;
+
+               
+         })
+
+
+      </script>
+
+
+
+   </div> -->
+
+
+
+
+<!-- projcet 06 -->
+   <div>
+
+      <label for="theme">Select your Favorite theme:</label>
+      <select name="theme" id="theme">
+         <option value="">Chose theme </option>
+         <option value="white">white</option>
+         <option value="black">black</option>
+         <option value="orange">orange</option>
+         <option value="yellow">yellow</option>
+         <option value="green">green</option>
+      </select>
+      <h1>This is my Website.</h1>
+
+      <script>
+         document.body.style.padding = '40px';
+
+         const select = document.querySelector('select');
+         const html = document.querySelector('html');
+
+         function updateTheme(bgColor, textColor) {
+            html.style.backgroundColor = bgColor;
+            html.style.color = textColor;
+         };
+
+         select.addEventListener('change', () => {
+            const choice = select.value;
+
+            switch (choice) {
+               case 'white':
+                  updateTheme('white', 'black');
+                  break;
+               
+               case 'black':
+                  updateTheme('black', 'white');
+                  break;
+
+               case 'orange':
+                  updateTheme('orange', 'black');
+                  break;
+
+               case 'yellow':
+                  updateTheme('yellow', 'red');
+                  break;
+
+               case 'green':
+                  updateTheme('green', 'white')
+            
+               default:
+                  break;
+            }
+         })
+
+      </script>
+
+
+   </div>
+
+
+
+
+
+
+
+
+
+
+
+   </div>
+   <!-- JavaScript and HTML content goes end -->
+   
+
+   
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+   <!-- Notes start  -->
+   <div>      
+      <button class="accordion"><i>
+            
+            "Practices ===> Making decisions in your code — conditionals" 
+
+         </i></button>
+      <div class="panel">
+         <p class="all-content">
+            <a target="_blank" href="https://developer.mozilla.org/en-US/docs/Learn/JavaScript/Building_blocks/conditionals">
+               <b>Dcos Link: </b>
+
+               Making decisions in your code — conditionals
+
+            </a><br> 
+
+
+
+            <h1>In this lessons we have learn:</h1>
+            <ol class="ol-notes">
+               <li>if....else statement</li>
+               <li>Operators:
+                  <ol>
+                     <li> === </li>
+                     <li> !==</li>
+                     <li> < </li>
+                     <li>></li>
+                     <li><=</li>
+                     <li>>=</li>
+                     <li>$$ ===> AND</li>
+                     <li>|| ===> OR</li>
+                     <li>! ===> NOT</li>
+                  </ol>
+               </li>
+               <li>switch statements ===> switch, break, default</li>
+               <li>Ternary operator ===> condition ? first code : last code;</li>
+               <li>With a Few projects</li>
+            </ol>
+            
+
+            
+
+         </p>
+      </div>
+      <div class="previous-next">
+         <button class="previous-button">
+            <a href="../1.conditionals/06.project.html">
+               <i class="fa fa-angle-left" aria-hidden="true"></i>
+                Prev
+            </a>
+         </button>
+
+         <button class="previous-button">
+            <a href="../index.html">
+               Home
+            </a>
+         </button>
+
+         <button class="next-button">
+            <a href="#">
+               Next
+               <i class="fa fa-angle-right" aria-hidden="true"></i>
+            </a>
+         </button>
+      </div>
+      <!-- script language -->
+      <script src="../script.js"></script>
+   </div>
+   <!-- Notes end -->
+
+</body>
+</html>

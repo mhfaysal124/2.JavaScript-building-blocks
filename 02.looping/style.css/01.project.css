@@ -1,0 +1,17 @@
+html{
+   width: 100%;
+   height: inherit;
+   background: #ddd;
+}
+canvas{
+   display: block;
+}
+body{
+   margin: 10px;
+}
+
+.container button{
+   position: absolute;
+   top: 5px;
+   left: 5px;
+}
